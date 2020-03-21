@@ -7,12 +7,6 @@ from cleaner import cleaner
 
 class Converter(object):
 
-    """         *TO MAKE IT BETTER*
-        1) way to run the program again
-        2) event handler
-        3) if there's no such directory "Converted" create it ->> in downloader
-        and in cleaner
-    """
 
     def __init__(self, master):
         frame = Frame(master)
@@ -45,15 +39,6 @@ class Converter(object):
         self.button = Button(self.background, text="changes", command=self.tag_changer, bg="#cae6d6", relief=GROOVE, image=icon2)
 
         self.butt_hole = Button(self.background, text="R you done?",font=("Tiza", 20), command=self.close_window)
-
-    # def again(self):
-    #     self.entry_link.focus()
-    #     self.entry_link.place(relx=0.5, rely=0.2, anchor=CENTER)
-    #     self.entry_name_of_the_file.place(relx=0.5, rely=0.4, anchor=CENTER)
-    #     self.download_button.place(relx=0.5, rely=0.6, anchor=CENTER)
-    #     self.label1.place(relx=0.5, rely=0.3, anchor=CENTER)
-    #     self.label2.place(relx=0.5, rely=0.1, anchor=CENTER)
-
 
     def la_converter(self):
         try:
